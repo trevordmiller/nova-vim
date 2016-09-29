@@ -1,4 +1,5 @@
-const nova = require('nova-colors')
+const uiGroups = require('nova-colors').uiGroups
+const ansiGroups = require('nova-colors').ansiGroups
 
 const sourceString =`
 " ==================================================================
@@ -6,25 +7,25 @@ const sourceString =`
 " ==================================================================
 
 " NORMAL
-let s:nova_normal_black = "${nova.normal.black}"
-let s:nova_normal_red = "${nova.normal.red}"
-let s:nova_normal_green = "${nova.normal.green}"
-let s:nova_normal_yellow = "${nova.normal.yellow}"
-let s:nova_normal_blue = "${nova.normal.blue}"
-let s:nova_normal_magenta = "${nova.normal.magenta}"
-let s:nova_normal_cyan = "${nova.normal.cyan}"
-let s:nova_normal_white = "${nova.normal.white}"
+let s:nova_normal_black = "${ansiGroups.normal.black}"
+let s:nova_normal_red = "${ansiGroups.normal.red}"
+let s:nova_normal_green = "${ansiGroups.normal.green}"
+let s:nova_normal_yellow = "${ansiGroups.normal.yellow}"
+let s:nova_normal_blue = "${ansiGroups.normal.blue}"
+let s:nova_normal_magenta = "${ansiGroups.normal.magenta}"
+let s:nova_normal_cyan = "${ansiGroups.normal.cyan}"
+let s:nova_normal_white = "${ansiGroups.normal.white}"
 
 " BRIGHT
-let s:nova_bright_black = "${nova.bright.black}"
-let s:nova_bright_red = "${nova.bright.red}"
-let s:nova_bright_magenta = "${nova.bright.magenta}"
-let s:nova_bright_white = "${nova.bright.white}"
+let s:nova_bright_black = "${ansiGroups.bright.black}"
+let s:nova_bright_red = "${ansiGroups.bright.red}"
+let s:nova_bright_magenta = "${ansiGroups.bright.magenta}"
+let s:nova_bright_white = "${ansiGroups.bright.white}"
 
 " DECORATION
-let s:nova_decoration_dark = "${nova.decoration.dark}"
-let s:nova_decoration_medium = "${nova.decoration.medium}"
-let s:nova_decoration_light = "${nova.decoration.light}"
+let s:nova_decoration_dark = "${uiGroups.gray0}"
+let s:nova_decoration_medium = "${uiGroups.gray2}"
+let s:nova_decoration_light = "${uiGroups.gray3}"
 
 
 " ==================================================================
@@ -55,22 +56,22 @@ let g:colors_name = "nova"
 call s:highlight_helper("Normal", s:nova_normal_white, "")
 
 " NEOVIM TERMINAL MODE
-let g:terminal_color_0 = "${nova.normal.black}"
-let g:terminal_color_1 = "${nova.normal.red}"
-let g:terminal_color_2 = "${nova.normal.green}"
-let g:terminal_color_3 = "${nova.normal.yellow}"
-let g:terminal_color_4 = "${nova.normal.blue}"
-let g:terminal_color_5 = "${nova.normal.magenta}"
-let g:terminal_color_6 = "${nova.normal.cyan}"
-let g:terminal_color_7 = "${nova.normal.white}"
-let g:terminal_color_8 = "${nova.bright.black}"
-let g:terminal_color_9 = "${nova.bright.red}"
-let g:terminal_color_10 = "${nova.normal.green}"
-let g:terminal_color_11 = "${nova.normal.yellow}"
-let g:terminal_color_12 = "${nova.normal.blue}"
-let g:terminal_color_13 = "${nova.bright.magenta}"
-let g:terminal_color_14 = "${nova.normal.cyan}"
-let g:terminal_color_15 = "${nova.bright.white}"
+let g:terminal_color_0 = "${ansiGroups.normal.black}"
+let g:terminal_color_1 = "${ansiGroups.normal.red}"
+let g:terminal_color_2 = "${ansiGroups.normal.green}"
+let g:terminal_color_3 = "${ansiGroups.normal.yellow}"
+let g:terminal_color_4 = "${ansiGroups.normal.blue}"
+let g:terminal_color_5 = "${ansiGroups.normal.magenta}"
+let g:terminal_color_6 = "${ansiGroups.normal.cyan}"
+let g:terminal_color_7 = "${ansiGroups.normal.white}"
+let g:terminal_color_8 = "${ansiGroups.bright.black}"
+let g:terminal_color_9 = "${ansiGroups.bright.red}"
+let g:terminal_color_10 = "${ansiGroups.normal.green}"
+let g:terminal_color_11 = "${ansiGroups.normal.yellow}"
+let g:terminal_color_12 = "${ansiGroups.normal.blue}"
+let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
+let g:terminal_color_14 = "${ansiGroups.normal.cyan}"
+let g:terminal_color_15 = "${ansiGroups.bright.white}"
 
 
 " ==================================================================
