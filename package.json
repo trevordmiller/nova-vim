@@ -12,7 +12,7 @@
     "watch": "0.19.2"
   },
   "dependencies": {
-    "nova-colors": "1.2.0"
+    "nova-colors": "^2.0.0"
   },
   "main": "colors/nova.vim",
   "description": "Nova color scheme plugin for Vim",
