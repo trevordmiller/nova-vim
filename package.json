@@ -1,6 +1,6 @@
 {
   "name": "nova-vim",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "scripts": {
     "start": "scripts/start",
     "push": "scripts/push",
