@@ -1,6 +1,7 @@
 const uiGroups = require('nova-colors').uiGroups
 const syntaxGroups = require('nova-colors').syntaxGroups
 const ansiGroups = require('nova-colors').ansiGroups
+const versionControlGroups = require('nova-colors').versionControlGroups
 
 const sourceString =`
 
@@ -48,7 +49,6 @@ let g:terminal_color_12 = "${ansiGroups.bright.blue}"
 let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
 let g:terminal_color_14 = "${ansiGroups.bright.cyan}"
 let g:terminal_color_15 = "${ansiGroups.bright.white}"
-
 
 " ==================================================================
 " UI GROUPS
@@ -233,6 +233,16 @@ call s:highlight_helper("jsNoise", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("cssClassNameDot", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
+
+" ==================================================================
+" PLUGINS
+" ==================================================================
+
+" GITGUTTER
+call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
+call s:highlight_helper("GitGutterChange", "${versionControlGroups.modified}", "")
+call s:highlight_helper("GitGutterChangeDelete", "${versionControlGroups.modified}", "")
+call s:highlight_helper("GitGutterDelete", "${versionControlGroups.removed}", "")
 `
 
 process.stdout.write(sourceString)

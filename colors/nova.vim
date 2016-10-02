@@ -46,7 +46,6 @@ let g:terminal_color_13 = "#D18EC2"
 let g:terminal_color_14 = "#7FC1CA"
 let g:terminal_color_15 = "#E6EEF3"
 
-
 " ==================================================================
 " UI GROUPS
 " ==================================================================
@@ -230,3 +229,13 @@ call s:highlight_helper("jsNoise", "#899BA6", "")
 call s:highlight_helper("cssClassNameDot", "#899BA6", "")
 call s:highlight_helper("jsonQuote", "#899BA6", "")
 call s:highlight_helper("shQuote", "#899BA6", "")
+
+" ==================================================================
+" PLUGINS
+" ==================================================================
+
+" GITGUTTER
+call s:highlight_helper("GitGutterAdd", "#A8CE93", "")
+call s:highlight_helper("GitGutterChange", "#F2C38F", "")
+call s:highlight_helper("GitGutterChangeDelete", "#F2C38F", "")
+call s:highlight_helper("GitGutterDelete", "#DF8C8C", "")
