@@ -235,7 +235,7 @@ call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
 
 " ==================================================================
-" PLUGINS
+" VERSION CONTROL
 " ==================================================================
 
 " GITGUTTER

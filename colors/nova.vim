@@ -231,7 +231,7 @@ call s:highlight_helper("jsonQuote", "#899BA6", "")
 call s:highlight_helper("shQuote", "#899BA6", "")
 
 " ==================================================================
-" PLUGINS
+" VERSION CONTROL
 " ==================================================================
 
 " GITGUTTER
