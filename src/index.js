@@ -72,7 +72,7 @@ call s:highlight_helper("VisualNOS", "${uiGroups.background}", "${uiGroups.userC
 call s:highlight_helper("Folded", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("FoldColumn", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("IncSearch", "${uiGroups.background}", "${uiGroups.userCurrentState}")
-call s:highlight_helper("Search", "${uiGroups.background}", "${uiGroups.userCurrentState}")
+call s:highlight_helper("Search", "${uiGroups.gray3}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("WildMenu", "${uiGroups.gray2}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("Question", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("MoreMsg", "${uiGroups.userCurrentState}", "")
