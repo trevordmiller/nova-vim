@@ -62,6 +62,9 @@ call s:highlight_helper("WarningMsg", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellBad", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
+call s:highlight_helper("NeomakeErrorSign", "${uiGroups.userActionNeeded}", "")
+call s:highlight_helper("NeomakeWarningSign", "${uiGroups.userActionNeeded}", "")
+
 
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "${uiGroups.userCurrentState}", "NONE")

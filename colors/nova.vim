@@ -58,6 +58,9 @@ call s:highlight_helper("WarningMsg", "#DF8C8C", "")
 call s:highlight_helper("SpellBad", "#DF8C8C", "")
 call s:highlight_helper("SpellCap", "#DF8C8C", "")
 call s:highlight_helper("Todo", "#DF8C8C", "")
+call s:highlight_helper("NeomakeErrorSign", "#DF8C8C", "")
+call s:highlight_helper("NeomakeWarningSign", "#DF8C8C", "")
+
 
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "#7FC1CA", "NONE")
