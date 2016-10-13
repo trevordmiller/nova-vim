@@ -61,8 +61,6 @@ call s:highlight_helper("ErrorMsg", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("WarningMsg", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellBad", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
-call s:highlight_helper("DiffChange", "${uiGroups.userActionNeeded}", "")
-call s:highlight_helper("DiffDelete", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
 
 " USER CURRENT STATE
@@ -81,8 +79,13 @@ call s:highlight_helper("ModeMsg", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("StatusLine", "${uiGroups.userCurrentState}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSel", "${uiGroups.gray2}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${uiGroups.userCurrentState}")
-call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${uiGroups.userCurrentState}")
+
+" GIT
+call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${versionControlGroups.added}")
+call s:highlight_helper("DiffChange", "${uiGroups.background}", "${versionControlGroups.modified}")
+call s:highlight_helper("DiffDelete", "${versionControlGroups.removed}", "")
+call s:highlight_helper("DiffText", "${uiGroups.background}", "${versionControlGroups.modified}", "BOLD")
 
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
@@ -94,7 +97,6 @@ call s:highlight_helper("VertSplit", "${uiGroups.gray2}", "${uiGroups.gray2}")
 call s:highlight_helper("StatusLineNC", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("Pmenu", "${uiGroups.foreground}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSbar", "${uiGroups.gray4}", "${uiGroups.gray4}")
-call s:highlight_helper("DiffText", "${uiGroups.gray0}", "")
 call s:highlight_helper("ColorColumn", "${uiGroups.gray2}", "")
 
 

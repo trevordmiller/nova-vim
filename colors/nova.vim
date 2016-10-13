@@ -57,8 +57,6 @@ call s:highlight_helper("ErrorMsg", "#DF8C8C", "")
 call s:highlight_helper("WarningMsg", "#DF8C8C", "")
 call s:highlight_helper("SpellBad", "#DF8C8C", "")
 call s:highlight_helper("SpellCap", "#DF8C8C", "")
-call s:highlight_helper("DiffChange", "#DF8C8C", "")
-call s:highlight_helper("DiffDelete", "#DF8C8C", "")
 call s:highlight_helper("Todo", "#DF8C8C", "")
 
 " USER CURRENT STATE
@@ -77,8 +75,13 @@ call s:highlight_helper("ModeMsg", "#7FC1CA", "")
 call s:highlight_helper("StatusLine", "#7FC1CA", "#556873")
 call s:highlight_helper("PmenuSel", "#556873", "#7FC1CA")
 call s:highlight_helper("PmenuThumb", "#7FC1CA", "#7FC1CA")
-call s:highlight_helper("DiffAdd", "#3C4C55", "#7FC1CA")
 call s:highlight_helper("CtrlPMatch", "#3C4C55", "#7FC1CA")
+
+" GIT
+call s:highlight_helper("DiffAdd", "#3C4C55", "#A8CE93")
+call s:highlight_helper("DiffChange", "#3C4C55", "#F2C38F")
+call s:highlight_helper("DiffDelete", "#DF8C8C", "")
+call s:highlight_helper("DiffText", "#3C4C55", "#F2C38F", "BOLD")
 
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
@@ -90,7 +93,6 @@ call s:highlight_helper("VertSplit", "#556873", "#556873")
 call s:highlight_helper("StatusLineNC", "#3C4C55", "#556873")
 call s:highlight_helper("Pmenu", "#C5D4DD", "#556873")
 call s:highlight_helper("PmenuSbar", "#899BA6", "#899BA6")
-call s:highlight_helper("DiffText", "#1E272C", "")
 call s:highlight_helper("ColorColumn", "#556873", "")
 
 
