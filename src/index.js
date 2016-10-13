@@ -9,12 +9,13 @@ const sourceString =`
 " HIGHLIGHT HELPER
 " ==================================================================
 
-function! s:highlight_helper(syntax_group, foreground_color, background_color)
-  if a:background_color != ""
-    exec "highlight " . a:syntax_group . " guifg=" . a:foreground_color . " guibg=" . a:background_color . " gui=NONE cterm=NONE term=NONE"
-  else
-    exec "highlight " . a:syntax_group . " guifg=" . a:foreground_color . " guibg=${uiGroups.background} gui=NONE cterm=NONE term=NONE"
-  endif
+function! s:highlight_helper(...)
+  let l:syntax_group = a:1
+  let l:foreground_color = a:2
+  let l:background_color = empty(a:3) ? "${uiGroups.background}" : a:3
+  let l:gui = a:0 == 3 ? "None" : a:4
+
+  exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
 endfunction
 
 
