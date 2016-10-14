@@ -3,7 +3,6 @@
   "version": "3.3.1",
   "scripts": {
     "start": "scripts/start",
-    "push": "scripts/push",
     "lint": "scripts/lint",
     "build": "scripts/build"
   },

@@ -1,5 +1,4 @@
 #!/bin/bash
 set -euo pipefail
 
-ln -sf "$(pwd)"/colors/nova.vim ~/.vim/colors/nova.vim
 watch 'npm run build' src
