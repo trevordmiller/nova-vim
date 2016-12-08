@@ -22,7 +22,6 @@ endfunction
 " CORE
 set background=dark
 highlight clear
-set termguicolors
 set fillchars=""
 syntax on
 syntax reset
