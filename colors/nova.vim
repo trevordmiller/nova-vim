@@ -23,6 +23,9 @@ endfunction
 set background=dark
 highlight clear
 set fillchars=""
+if (has("termguicolors"))
+  set termguicolors
+endif
 syntax on
 syntax reset
 let g:colors_name = "nova"
