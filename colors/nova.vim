@@ -22,10 +22,10 @@ endfunction
 " CORE
 set background=dark
 highlight clear
-set fillchars=""
 if (has("termguicolors"))
   set termguicolors
 endif
+set fillchars=""
 syntax on
 syntax reset
 let g:colors_name = "nova"
