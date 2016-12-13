@@ -241,7 +241,7 @@ call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
 
 " ==================================================================
-" VERSION CONTROL
+" COMMON PLUGINS
 " ==================================================================
 
 " GITGUTTER
@@ -249,6 +249,12 @@ call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
 call s:highlight_helper("GitGutterChange", "${versionControlGroups.modified}", "")
 call s:highlight_helper("GitGutterChangeDelete", "${versionControlGroups.modified}", "")
 call s:highlight_helper("GitGutterDelete", "${versionControlGroups.removed}", "")
+
+" EASYMOTION
+call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOLD")
+call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
+call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
+call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
 `
 
 process.stdout.write(sourceString)

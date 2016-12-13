@@ -237,7 +237,7 @@ call s:highlight_helper("jsonQuote", "#899BA6", "")
 call s:highlight_helper("shQuote", "#899BA6", "")
 
 " ==================================================================
-" VERSION CONTROL
+" COMMON PLUGINS
 " ==================================================================
 
 " GITGUTTER
@@ -245,3 +245,9 @@ call s:highlight_helper("GitGutterAdd", "#A8CE93", "")
 call s:highlight_helper("GitGutterChange", "#F2C38F", "")
 call s:highlight_helper("GitGutterChangeDelete", "#F2C38F", "")
 call s:highlight_helper("GitGutterDelete", "#DF8C8C", "")
+
+" EASYMOTION
+call s:highlight_helper("EasyMotionTarget", "#DF8C8C", "", "BOLD")
+call s:highlight_helper("EasyMotionTarget2First", "#F2C38F", "")
+call s:highlight_helper("EasyMotionTarget2Second", "#DADA93", "")
+call s:highlight_helper("EasyMotionShade", "#899BA6", "")
