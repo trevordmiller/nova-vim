@@ -255,6 +255,11 @@ call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOL
 call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
 call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
 call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
+
+" FZF.vim
+call s:highlight_helper("fzf1", "${uiGroups.background}", "${uiGroups.gray2}")
+call s:highlight_helper("fzf2", "${uiGroups.background}", "${uiGroups.gray2}")
+call s:highlight_helper("fzf3", "${uiGroups.background}", "${uiGroups.gray2}")
 `
 
 process.stdout.write(sourceString)
