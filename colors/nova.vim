@@ -251,3 +251,8 @@ call s:highlight_helper("EasyMotionTarget", "#DF8C8C", "", "BOLD")
 call s:highlight_helper("EasyMotionTarget2First", "#F2C38F", "")
 call s:highlight_helper("EasyMotionTarget2Second", "#DADA93", "")
 call s:highlight_helper("EasyMotionShade", "#899BA6", "")
+
+" FZF.vim
+call s:highlight_helper("fzf1", "#3C4C55", "#556873")
+call s:highlight_helper("fzf2", "#3C4C55", "#556873")
+call s:highlight_helper("fzf3", "#3C4C55", "#556873")
