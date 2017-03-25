@@ -7,6 +7,7 @@ _This assumes you have Bash, Git, Node, and Yarn_
   - In normal Vim, you can do this with a symbolic link to the `.vim/colors` directory like this: `ln -sf "$(pwd)"/colors/nova.vim ~/.vim/colors/nova.vim`
 - Run `yarn dev` to lint and compile from `src` to `build` folder
 - With each change, you will need to run `:source $MYVIMRC` to see the change, since Vim doesn't reload your `.vimrc` automatically
+- Run `:hi` to view all applied highlight groups
 - Stage and commit
 - Submit a pull request to `master`
 - Ensure your pull request passes all checks
