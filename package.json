@@ -2,15 +2,29 @@
   "name": "nova-vim",
   "version": "3.6.0",
   "scripts": {
-    "start": "scripts/start",
+    "dev": "scripts/dev",
     "build": "scripts/build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended"
+    ],
+    "env": {
+      "es6": true,
+      "node": true,
+      "commonjs": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    }
   },
   "devDependencies": {
     "eslint": "3.5.0",
     "watch": "0.19.2"
   },
   "dependencies": {
-    "nova-colors": "2.1.4"
+    "nova-colors": "^2.1.5"
   },
   "main": "colors/nova.vim",
   "description": "Nova color scheme plugin for Vim",
