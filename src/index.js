@@ -51,6 +51,7 @@ let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
 let g:terminal_color_14 = "${ansiGroups.bright.cyan}"
 let g:terminal_color_15 = "${ansiGroups.bright.white}"
 
+
 " ==================================================================
 " UI GROUPS
 " ==================================================================
@@ -64,7 +65,6 @@ call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("NeomakeErrorSign", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("NeomakeWarningSign", "${uiGroups.userActionNeeded}", "")
-
 
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "${uiGroups.userCurrentState}", "NONE")
@@ -239,6 +239,7 @@ call s:highlight_helper("jsNoise", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("cssClassNameDot", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
+
 
 " ==================================================================
 " COMMON PLUGINS

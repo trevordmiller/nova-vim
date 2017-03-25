@@ -47,6 +47,7 @@ let g:terminal_color_13 = "#D18EC2"
 let g:terminal_color_14 = "#7FC1CA"
 let g:terminal_color_15 = "#E6EEF3"
 
+
 " ==================================================================
 " UI GROUPS
 " ==================================================================
@@ -60,7 +61,6 @@ call s:highlight_helper("SpellCap", "#DF8C8C", "")
 call s:highlight_helper("Todo", "#DF8C8C", "")
 call s:highlight_helper("NeomakeErrorSign", "#DF8C8C", "")
 call s:highlight_helper("NeomakeWarningSign", "#DF8C8C", "")
-
 
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "#7FC1CA", "NONE")
@@ -235,6 +235,7 @@ call s:highlight_helper("jsNoise", "#899BA6", "")
 call s:highlight_helper("cssClassNameDot", "#899BA6", "")
 call s:highlight_helper("jsonQuote", "#899BA6", "")
 call s:highlight_helper("shQuote", "#899BA6", "")
+
 
 " ==================================================================
 " COMMON PLUGINS
