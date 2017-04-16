@@ -158,6 +158,7 @@ call s:highlight_helper("jsonKeyword", "#83AFE5", "")
 call s:highlight_helper("xmlAttrib", "#83AFE5", "")
 call s:highlight_helper("netrwExe", "#83AFE5", "")
 call s:highlight_helper("shFunction", "#83AFE5", "")
+call s:highlight_helper("typescriptType", "#83AFE5", "")
 
 " STATEMENT
 call s:highlight_helper("Statement", "#DADA93", "")
@@ -180,6 +181,9 @@ call s:highlight_helper("jsFunction", "#A8CE93", "")
 call s:highlight_helper("jsStorageClass", "#A8CE93", "")
 call s:highlight_helper("jsNan", "#A8CE93", "")
 call s:highlight_helper("shFunctionKey", "#A8CE93", "")
+call s:highlight_helper("typescriptFuncKeyword", "#A8CE93", "")
+call s:highlight_helper("typescriptLabel", "#A8CE93", "")
+call s:highlight_helper("typescriptIdentifier", "#A8CE93", "")
 
 " GLOBAL
 call s:highlight_helper("PreProc", "#9A93E1", "")
@@ -188,6 +192,7 @@ call s:highlight_helper("jsThis", "#9A93E1", "")
 call s:highlight_helper("cssTagName", "#9A93E1", "")
 call s:highlight_helper("jsGlobalNodeObjects", "#9A93E1", "")
 call s:highlight_helper("cssFontDescriptor", "#9A93E1", "")
+call s:highlight_helper("typescriptReserved", "#9A93E1", "")
 
 " EMPHASIS
 call s:highlight_helper("Underlined", "#D18EC2", "")
@@ -225,6 +230,8 @@ call s:highlight_helper("markdownCodeDelimiter", "#F2C38F", "")
 call s:highlight_helper("netrwClassify", "#F2C38F", "")
 call s:highlight_helper("netrwVersion", "#F2C38F", "")
 call s:highlight_helper("CtrlPStats", "#F2C38F", "")
+call s:highlight_helper("typescriptBraces", "#F2C38F", "")
+call s:highlight_helper("typescriptParens", "#F2C38F", "")
 
 " TRIVIAL
 call s:highlight_helper("Comment", "#899BA6", "")
@@ -235,6 +242,7 @@ call s:highlight_helper("jsNoise", "#899BA6", "")
 call s:highlight_helper("cssClassNameDot", "#899BA6", "")
 call s:highlight_helper("jsonQuote", "#899BA6", "")
 call s:highlight_helper("shQuote", "#899BA6", "")
+call s:highlight_helper("typescriptEndColons", "#899BA6", "")
 
 
 " ==================================================================
