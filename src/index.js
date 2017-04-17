@@ -162,6 +162,8 @@ call s:highlight_helper("jsonKeyword", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("xmlAttrib", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("netrwExe", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("shFunction", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("typescriptVariableDeclaration", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("typescriptCall", "${syntaxGroups.identifier}", "")
 
 " STATEMENT
 call s:highlight_helper("Statement", "${syntaxGroups.statement}", "")
@@ -177,6 +179,10 @@ call s:highlight_helper("xmlEndTag", "${syntaxGroups.statement}", "")
 call s:highlight_helper("xmlTagName", "${syntaxGroups.statement}", "")
 call s:highlight_helper("xmlEqual", "${syntaxGroups.statement}", "")
 call s:highlight_helper("shCmdSubRegion", "${syntaxGroups.statement}", "")
+call s:highlight_helper("typescriptOperator", "${syntaxGroups.statement}", "")
+call s:highlight_helper("typescriptOpSymbols", "${syntaxGroups.statement}", "")
+call s:highlight_helper("typescriptProp", "${syntaxGroups.statement}", "")
+
 
 " TYPE
 call s:highlight_helper("Type", "${syntaxGroups.type}", "")
@@ -184,6 +190,10 @@ call s:highlight_helper("jsFunction", "${syntaxGroups.type}", "")
 call s:highlight_helper("jsStorageClass", "${syntaxGroups.type}", "")
 call s:highlight_helper("jsNan", "${syntaxGroups.type}", "")
 call s:highlight_helper("shFunctionKey", "${syntaxGroups.type}", "")
+call s:highlight_helper("typescriptEnumKeyword", "${syntaxGroups.type}", "")
+call s:highlight_helper("typescriptVariable", "${syntaxGroups.type}", "")
+call s:highlight_helper("typescriptFuncKeyword", "${syntaxGroups.type}", "")
+call s:highlight_helper("typescriptDefault", "${syntaxGroups.type}", "")
 
 " GLOBAL
 call s:highlight_helper("PreProc", "${syntaxGroups.global}", "")
@@ -192,6 +202,9 @@ call s:highlight_helper("jsThis", "${syntaxGroups.global}", "")
 call s:highlight_helper("cssTagName", "${syntaxGroups.global}", "")
 call s:highlight_helper("jsGlobalNodeObjects", "${syntaxGroups.global}", "")
 call s:highlight_helper("cssFontDescriptor", "${syntaxGroups.global}", "")
+call s:highlight_helper("typescriptGlobal", "${syntaxGroups.global}", "")
+call s:highlight_helper("typescriptExport", "${syntaxGroups.global}", "")
+call s:highlight_helper("typescriptImport", "${syntaxGroups.global}", "")
 
 " EMPHASIS
 call s:highlight_helper("Underlined", "${syntaxGroups.emphasis}", "")
@@ -229,6 +242,9 @@ call s:highlight_helper("markdownCodeDelimiter", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwClassify", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwVersion", "${syntaxGroups.special}", "")
 call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
+call s:highlight_helper("typescriptParens", "${syntaxGroups.special}", "")
+call s:highlight_helper("typescriptBraces", "${syntaxGroups.special}", "")
+call s:highlight_helper("typescriptArrowFunc", "${syntaxGroups.special}", "")
 
 " TRIVIAL
 call s:highlight_helper("Comment", "${syntaxGroups.trivial}", "")
@@ -239,7 +255,8 @@ call s:highlight_helper("jsNoise", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("cssClassNameDot", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
-
+call s:highlight_helper("typescriptEndColons", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("typescriptTemplateSB", "${syntaxGroups.trivial}", "")
 
 " ==================================================================
 " COMMON PLUGINS
