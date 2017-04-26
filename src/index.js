@@ -4,7 +4,6 @@ const ansiGroups = require('nova-colors').ansiGroups
 const versionControlGroups = require('nova-colors').versionControlGroups
 
 const sourceString =`
-
 " ==================================================================
 " HIGHLIGHT HELPER
 " ==================================================================
@@ -79,16 +78,20 @@ call s:highlight_helper("WildMenu", "${uiGroups.gray2}", "${uiGroups.userCurrent
 call s:highlight_helper("Question", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("MoreMsg", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("ModeMsg", "${uiGroups.userCurrentState}", "")
-call s:highlight_helper("StatusLine", "${uiGroups.userCurrentState}", "${uiGroups.gray2}")
+call s:highlight_helper("StatusLine", "${uiGroups.userCurrentState}", "${uiGroups.backgroundShade}")
 call s:highlight_helper("PmenuSel", "${uiGroups.gray2}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${uiGroups.userCurrentState}")
 
-" GIT
+" VERSION CONTROL
 call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${versionControlGroups.added}")
 call s:highlight_helper("DiffChange", "${uiGroups.background}", "${versionControlGroups.modified}")
 call s:highlight_helper("DiffDelete", "${versionControlGroups.removed}", "")
 call s:highlight_helper("DiffText", "${uiGroups.background}", "${versionControlGroups.modified}", "BOLD")
+call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
+call s:highlight_helper("GitGutterChange", "${versionControlGroups.modified}", "")
+call s:highlight_helper("GitGutterChangeDelete", "${versionControlGroups.modified}", "")
+call s:highlight_helper("GitGutterDelete", "${versionControlGroups.removed}", "")
 
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
@@ -96,11 +99,19 @@ call s:highlight_helper("LineNr", "${uiGroups.gray3}", "")
 call s:highlight_helper("CursorLine", "NONE", "${uiGroups.gray2}")
 call s:highlight_helper("CursorColumn", "${uiGroups.gray2}", "")
 call s:highlight_helper("EndOfBuffer", "${uiGroups.gray2}", "")
-call s:highlight_helper("VertSplit", "${uiGroups.gray2}", "${uiGroups.gray2}")
-call s:highlight_helper("StatusLineNC", "${uiGroups.background}", "${uiGroups.gray2}")
+call s:highlight_helper("VertSplit", "${uiGroups.backgroundShade}", "${uiGroups.backgroundShade}")
+call s:highlight_helper("StatusLineNC", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
 call s:highlight_helper("Pmenu", "${uiGroups.foreground}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSbar", "${uiGroups.gray4}", "${uiGroups.gray4}")
 call s:highlight_helper("ColorColumn", "${uiGroups.gray2}", "")
+call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
+call s:highlight_helper("fzf1", "${uiGroups.background}", "${uiGroups.gray2}")
+call s:highlight_helper("fzf2", "${uiGroups.background}", "${uiGroups.gray2}")
+call s:highlight_helper("fzf3", "${uiGroups.background}", "${uiGroups.gray2}")
+call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOLD")
+call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
+call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
+call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
 
 
 " ==================================================================
@@ -183,7 +194,6 @@ call s:highlight_helper("typescriptOperator", "${syntaxGroups.statement}", "")
 call s:highlight_helper("typescriptOpSymbols", "${syntaxGroups.statement}", "")
 call s:highlight_helper("typescriptProp", "${syntaxGroups.statement}", "")
 
-
 " TYPE
 call s:highlight_helper("Type", "${syntaxGroups.type}", "")
 call s:highlight_helper("jsFunction", "${syntaxGroups.type}", "")
@@ -241,7 +251,6 @@ call s:highlight_helper("markdownLinkText", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownCodeDelimiter", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwClassify", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwVersion", "${syntaxGroups.special}", "")
-call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptParens", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptBraces", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptArrowFunc", "${syntaxGroups.special}", "")
@@ -257,27 +266,6 @@ call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("typescriptEndColons", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("typescriptTemplateSB", "${syntaxGroups.trivial}", "")
-
-" ==================================================================
-" COMMON PLUGINS
-" ==================================================================
-
-" GITGUTTER
-call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
-call s:highlight_helper("GitGutterChange", "${versionControlGroups.modified}", "")
-call s:highlight_helper("GitGutterChangeDelete", "${versionControlGroups.modified}", "")
-call s:highlight_helper("GitGutterDelete", "${versionControlGroups.removed}", "")
-
-" EASYMOTION
-call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOLD")
-call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
-call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
-call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
-
-" FZF.vim
-call s:highlight_helper("fzf1", "${uiGroups.background}", "${uiGroups.gray2}")
-call s:highlight_helper("fzf2", "${uiGroups.background}", "${uiGroups.gray2}")
-call s:highlight_helper("fzf3", "${uiGroups.background}", "${uiGroups.gray2}")
 `
 
 process.stdout.write(sourceString)
