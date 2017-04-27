@@ -22,7 +22,7 @@ endfunction
 set background=dark
 highlight clear
 set termguicolors
-set fillchars=""
+set fillchars+=vert:│
 syntax on
 syntax reset
 let g:colors_name = "nova"
@@ -95,7 +95,7 @@ call s:highlight_helper("LineNr", "#6A7D89", "")
 call s:highlight_helper("CursorLine", "NONE", "#556873")
 call s:highlight_helper("CursorColumn", "#556873", "")
 call s:highlight_helper("EndOfBuffer", "#556873", "")
-call s:highlight_helper("VertSplit", "#1E272C", "#1E272C")
+call s:highlight_helper("VertSplit", "#1E272C", "")
 call s:highlight_helper("StatusLineNC", "#6A7D89", "#1E272C")
 call s:highlight_helper("Pmenu", "#C5D4DD", "#556873")
 call s:highlight_helper("PmenuSbar", "#899BA6", "#899BA6")
