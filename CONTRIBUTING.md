@@ -11,7 +11,7 @@ _This assumes you have Bash, Git, Node, and Yarn_
 - Stage and commit
 - Submit a pull request to `master`
 - Ensure your pull request passes all checks
-- An admin will review your pull request
+- An admin will review your pull request and run `yarn release` to release a new version
 - Remove your local colorscheme
   - In normal Vim, you can do this by removing the symbolic link to the `.vim/colors` directory like this: `rm ~/.vim/colors/nova.vim`
 - Once your pull request is merged, update your `nova-vim` plugin to the latest remote version that has your changes in it and make sure everything is working as expected

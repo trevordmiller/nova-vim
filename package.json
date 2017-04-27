@@ -3,7 +3,8 @@
   "version": "3.9.0",
   "scripts": {
     "dev": "scripts/dev",
-    "build": "scripts/build"
+    "build": "scripts/build",
+    "release": "scripts/release"
   },
   "eslintConfig": {
     "extends": [
