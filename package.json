@@ -1,6 +1,6 @@
 {
   "name": "nova-vim",
-  "version": "3.9.1",
+  "version": "3.9.2",
   "scripts": {
     "dev": "scripts/dev",
     "build": "scripts/build",
