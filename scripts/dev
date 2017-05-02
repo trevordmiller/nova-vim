@@ -1,4 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-
-watch 'npm run build' src

@@ -1,10 +1,27 @@
 {
   "name": "nova-vim",
   "version": "3.9.2",
+  "description": "Nova color scheme plugin for Vim",
+  "homepage": "https://trevordmiller.github.io/nova",
+  "author": "Trevor D. Miller <trevordmiller@icloud.com> (http://www.trevordmiller.com)",
+  "license": "MIT",
+  "keywords": [
+    "vim",
+    "vim-theme",
+    "color-scheme",
+    "colors"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevordmiller/nova-vim.git"
+  },
+  "main": "colors/nova.vim",
   "scripts": {
-    "dev": "scripts/dev",
+    "dev": "watch 'npm run build' src",
+    "verify": "yarn lint && yarn build",
+    "lint": "eslint src",
     "build": "scripts/build",
-    "release": "scripts/release"
+    "release": "git checkout master && git pull && yarn build && yarn version && git push && git push --tags"
   },
   "eslintConfig": {
     "extends": [
@@ -26,20 +43,5 @@
   },
   "dependencies": {
     "nova-colors": "^2.1.5"
-  },
-  "main": "colors/nova.vim",
-  "description": "Nova color scheme plugin for Vim",
-  "homepage": "https://trevordmiller.github.io/nova",
-  "author": "Trevor D. Miller <trevordmiller@icloud.com> (http://www.trevordmiller.com)",
-  "license": "MIT",
-  "keywords": [
-    "vim",
-    "vim-theme",
-    "color-scheme",
-    "colors"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trevordmiller/nova-vim.git"
   }
 }
