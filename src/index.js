@@ -3,7 +3,7 @@ const syntaxGroups = require('nova-colors').syntaxGroups
 const ansiGroups = require('nova-colors').ansiGroups
 const versionControlGroups = require('nova-colors').versionControlGroups
 
-const sourceString =`
+const sourceString = `
 " ==================================================================
 " HIGHLIGHT HELPER
 " ==================================================================
@@ -97,7 +97,7 @@ call s:highlight_helper("GitGutterDelete", "${versionControlGroups.removed}", ""
 call s:highlight_helper("SignColumn", "NONE", "")
 call s:highlight_helper("LineNr", "${uiGroups.gray3}", "")
 call s:highlight_helper("CursorLine", "NONE", "${uiGroups.gray2}")
-call s:highlight_helper("CursorColumn", "${uiGroups.gray2}", "")
+call s:highlight_helper("CursorColumn", "NONE", "${uiGroups.gray2}")
 call s:highlight_helper("EndOfBuffer", "${uiGroups.gray2}", "")
 call s:highlight_helper("VertSplit", "${uiGroups.backgroundShade}", "")
 call s:highlight_helper("StatusLineNC", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
