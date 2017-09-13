@@ -112,7 +112,9 @@ call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOL
 call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
 call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
 call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
-
+call s:highlight_helper("TabLine", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
+call s:highlight_helper("TabLineSel", "${uiGroups.userCurrentState}", "${uiGroups.background}")
+call s:highlight_helper("TabLineFill", "${uiGroups.backgroundShade}", "${uiGroups.backgroundShade}")
 
 " ==================================================================
 " SYNTAX GROUPS
