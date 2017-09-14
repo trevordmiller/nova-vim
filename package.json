@@ -7,7 +7,8 @@
     "verify": "npm run lint && npm run build",
     "lint": "eslint src",
     "build": "scripts/build",
-    "release": "git checkout master && git pull && npm run build && npm version && git push && git push --tags"
+    "release": "git checkout master && git pull && npm version",
+    "postrelease": "npm run build && git push && git push --tags"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
