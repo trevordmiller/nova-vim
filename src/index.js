@@ -79,6 +79,7 @@ call s:highlight_helper("Question", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("MoreMsg", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("ModeMsg", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("StatusLine", "${uiGroups.userCurrentState}", "${uiGroups.backgroundShade}")
+call s:highlight_helper("TabLineSel", "${uiGroups.userCurrentState}", "${uiGroups.background}")
 call s:highlight_helper("PmenuSel", "${uiGroups.gray2}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${uiGroups.userCurrentState}")
 call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${uiGroups.userCurrentState}")
@@ -101,6 +102,8 @@ call s:highlight_helper("CursorColumn", "NONE", "${uiGroups.gray2}")
 call s:highlight_helper("EndOfBuffer", "${uiGroups.gray2}", "")
 call s:highlight_helper("VertSplit", "${uiGroups.backgroundShade}", "")
 call s:highlight_helper("StatusLineNC", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
+call s:highlight_helper("TabLine", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
+call s:highlight_helper("TabLineFill", "${uiGroups.backgroundShade}", "${uiGroups.backgroundShade}")
 call s:highlight_helper("Pmenu", "${uiGroups.foreground}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSbar", "${uiGroups.gray4}", "${uiGroups.gray4}")
 call s:highlight_helper("ColorColumn", "${uiGroups.gray2}", "")
@@ -112,9 +115,7 @@ call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOL
 call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
 call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
 call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
-call s:highlight_helper("TabLine", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("TabLineSel", "${uiGroups.userCurrentState}", "${uiGroups.background}")
-call s:highlight_helper("TabLineFill", "${uiGroups.backgroundShade}", "${uiGroups.backgroundShade}")
+
 
 " ==================================================================
 " SYNTAX GROUPS
