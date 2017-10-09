@@ -8,7 +8,7 @@
     "lint": "eslint src",
     "build": "scripts/build",
     "release": "git checkout master && git pull && npm version",
-    "postrelease": "npm run build && git push && git push --tags"
+    "postrelease": "npm run build && git push && git push --tags && open https://github.com/trevordmiller/nova-vim/releases"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
