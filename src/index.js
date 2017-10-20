@@ -87,10 +87,10 @@ call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${uiGroup
 call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${uiGroups.userCurrentState}")
 
 " VERSION CONTROL
-call s:highlight_helper("DiffAdd", "${versionControlGroups.added}", "")
-call s:highlight_helper("DiffChange", "${versionControlGroups.modified}", "")
+call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${versionControlGroups.added}")
+call s:highlight_helper("DiffChange", "${uiGroups.background}", "${versionControlGroups.modified}")
 call s:highlight_helper("DiffDelete", "${versionControlGroups.removed}", "")
-call s:highlight_helper("DiffText", "${versionControlGroups.modified}", "", "BOLD")
+call s:highlight_helper("DiffText", "${uiGroups.background}", "${versionControlGroups.modified}", "BOLD")
 call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
 call s:highlight_helper("GitGutterChange", "${versionControlGroups.modified}", "")
 call s:highlight_helper("GitGutterChangeDelete", "${versionControlGroups.modified}", "")
