@@ -26,7 +26,6 @@ endfunction
 set background=dark
 highlight clear
 set termguicolors
-set fillchars+=vert:│
 syntax on
 syntax reset
 let g:colors_name = "nova"
