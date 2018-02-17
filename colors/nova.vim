@@ -18,7 +18,6 @@ endfunction
 " RESET
 " ==================================================================
 
-" CORE
 set background=dark
 highlight clear
 set termguicolors
@@ -26,24 +25,6 @@ syntax on
 syntax reset
 let g:colors_name = "nova"
 call s:highlight_helper("Normal", "#C5D4DD", "")
-
-" NEOVIM TERMINAL MODE
-let g:terminal_color_0 = "#3C4C55"
-let g:terminal_color_1 = "#DF8C8C"
-let g:terminal_color_2 = "#A8CE93"
-let g:terminal_color_3 = "#DADA93"
-let g:terminal_color_4 = "#83AFE5"
-let g:terminal_color_5 = "#9A93E1"
-let g:terminal_color_6 = "#7FC1CA"
-let g:terminal_color_7 = "#C5D4DD"
-let g:terminal_color_8 = "#899BA6"
-let g:terminal_color_9 = "#F2C38F"
-let g:terminal_color_10 = "#A8CE93"
-let g:terminal_color_11 = "#DADA93"
-let g:terminal_color_12 = "#83AFE5"
-let g:terminal_color_13 = "#D18EC2"
-let g:terminal_color_14 = "#7FC1CA"
-let g:terminal_color_15 = "#E6EEF3"
 
 
 " ==================================================================
@@ -106,14 +87,12 @@ call s:highlight_helper("ToolbarLine", "#6A7D89", "#1E272C")
 call s:highlight_helper("Pmenu", "#C5D4DD", "#556873")
 call s:highlight_helper("PmenuSbar", "#899BA6", "#899BA6")
 call s:highlight_helper("ColorColumn", "#556873", "")
-call s:highlight_helper("CtrlPStats", "#F2C38F", "")
 call s:highlight_helper("fzf1", "#3C4C55", "#556873")
 call s:highlight_helper("fzf2", "#3C4C55", "#556873")
 call s:highlight_helper("fzf3", "#3C4C55", "#556873")
 call s:highlight_helper("EasyMotionTarget", "#DF8C8C", "", "BOLD")
 call s:highlight_helper("EasyMotionTarget2First", "#F2C38F", "")
 call s:highlight_helper("EasyMotionTarget2Second", "#DADA93", "")
-call s:highlight_helper("EasyMotionShade", "#899BA6", "")
 
 
 " ==================================================================
@@ -296,6 +275,7 @@ call s:highlight_helper("netrwVersion", "#F2C38F", "")
 call s:highlight_helper("typescriptParens", "#F2C38F", "")
 call s:highlight_helper("typescriptBraces", "#F2C38F", "")
 call s:highlight_helper("typescriptArrowFunc", "#F2C38F", "")
+call s:highlight_helper("CtrlPStats", "#F2C38F", "")
 
 " TRIVIAL
 call s:highlight_helper("Comment", "#899BA6", "")
@@ -309,3 +289,43 @@ call s:highlight_helper("jsonQuote", "#899BA6", "")
 call s:highlight_helper("shQuote", "#899BA6", "")
 call s:highlight_helper("typescriptEndColons", "#899BA6", "")
 call s:highlight_helper("typescriptTemplateSB", "#899BA6", "")
+call s:highlight_helper("EasyMotionShade", "#899BA6", "")
+
+
+" ==================================================================
+" VARIABLES
+" ==================================================================
+
+" NEOVIM TERMINAL MODE
+let g:terminal_color_0 = "#3C4C55"
+let g:terminal_color_1 = "#DF8C8C"
+let g:terminal_color_2 = "#A8CE93"
+let g:terminal_color_3 = "#DADA93"
+let g:terminal_color_4 = "#83AFE5"
+let g:terminal_color_5 = "#9A93E1"
+let g:terminal_color_6 = "#7FC1CA"
+let g:terminal_color_7 = "#C5D4DD"
+let g:terminal_color_8 = "#899BA6"
+let g:terminal_color_9 = "#F2C38F"
+let g:terminal_color_10 = "#A8CE93"
+let g:terminal_color_11 = "#DADA93"
+let g:terminal_color_12 = "#83AFE5"
+let g:terminal_color_13 = "#D18EC2"
+let g:terminal_color_14 = "#7FC1CA"
+let g:terminal_color_15 = "#E6EEF3"
+
+" FZF
+let g:fzf_colors =
+\ { "fg":      ["fg", "Normal"],
+  \ "bg":      ["bg", "Normal"],
+  \ "hl":      ["fg", "IncSearch"],
+  \ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
+  \ "bg+":     ["bg", "CursorLine", "CursorColumn"],
+  \ "hl+":     ["fg", "IncSearch"],
+  \ "info":    ["fg", "IncSearch"],
+  \ "border":  ["fg", "Ignore"],
+  \ "prompt":  ["fg", "Comment"],
+  \ "pointer": ["fg", "IncSearch"],
+  \ "marker":  ["fg", "IncSearch"],
+  \ "spinner": ["fg", "IncSearch"],
+  \ "header":  ["fg", "IncSearch"] }

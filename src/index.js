@@ -22,7 +22,6 @@ endfunction
 " RESET
 " ==================================================================
 
-" CORE
 set background=dark
 highlight clear
 set termguicolors
@@ -30,24 +29,6 @@ syntax on
 syntax reset
 let g:colors_name = "nova"
 call s:highlight_helper("Normal", "${uiGroups.foreground}", "")
-
-" NEOVIM TERMINAL MODE
-let g:terminal_color_0 = "${ansiGroups.normal.black}"
-let g:terminal_color_1 = "${ansiGroups.normal.red}"
-let g:terminal_color_2 = "${ansiGroups.normal.green}"
-let g:terminal_color_3 = "${ansiGroups.normal.yellow}"
-let g:terminal_color_4 = "${ansiGroups.normal.blue}"
-let g:terminal_color_5 = "${ansiGroups.normal.magenta}"
-let g:terminal_color_6 = "${ansiGroups.normal.cyan}"
-let g:terminal_color_7 = "${ansiGroups.normal.white}"
-let g:terminal_color_8 = "${ansiGroups.bright.black}"
-let g:terminal_color_9 = "${ansiGroups.bright.red}"
-let g:terminal_color_10 = "${ansiGroups.bright.green}"
-let g:terminal_color_11 = "${ansiGroups.bright.yellow}"
-let g:terminal_color_12 = "${ansiGroups.bright.blue}"
-let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
-let g:terminal_color_14 = "${ansiGroups.bright.cyan}"
-let g:terminal_color_15 = "${ansiGroups.bright.white}"
 
 
 " ==================================================================
@@ -110,14 +91,12 @@ call s:highlight_helper("ToolbarLine", "${uiGroups.gray3}", "${uiGroups.backgrou
 call s:highlight_helper("Pmenu", "${uiGroups.foreground}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSbar", "${uiGroups.gray4}", "${uiGroups.gray4}")
 call s:highlight_helper("ColorColumn", "${uiGroups.gray2}", "")
-call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
 call s:highlight_helper("fzf1", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("fzf2", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("fzf3", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOLD")
 call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
 call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
-call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
 
 
 " ==================================================================
@@ -300,6 +279,7 @@ call s:highlight_helper("netrwVersion", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptParens", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptBraces", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptArrowFunc", "${syntaxGroups.special}", "")
+call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
 
 " TRIVIAL
 call s:highlight_helper("Comment", "${syntaxGroups.trivial}", "")
@@ -313,6 +293,46 @@ call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("typescriptEndColons", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("typescriptTemplateSB", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
+
+
+" ==================================================================
+" VARIABLES
+" ==================================================================
+
+" NEOVIM TERMINAL MODE
+let g:terminal_color_0 = "${ansiGroups.normal.black}"
+let g:terminal_color_1 = "${ansiGroups.normal.red}"
+let g:terminal_color_2 = "${ansiGroups.normal.green}"
+let g:terminal_color_3 = "${ansiGroups.normal.yellow}"
+let g:terminal_color_4 = "${ansiGroups.normal.blue}"
+let g:terminal_color_5 = "${ansiGroups.normal.magenta}"
+let g:terminal_color_6 = "${ansiGroups.normal.cyan}"
+let g:terminal_color_7 = "${ansiGroups.normal.white}"
+let g:terminal_color_8 = "${ansiGroups.bright.black}"
+let g:terminal_color_9 = "${ansiGroups.bright.red}"
+let g:terminal_color_10 = "${ansiGroups.bright.green}"
+let g:terminal_color_11 = "${ansiGroups.bright.yellow}"
+let g:terminal_color_12 = "${ansiGroups.bright.blue}"
+let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
+let g:terminal_color_14 = "${ansiGroups.bright.cyan}"
+let g:terminal_color_15 = "${ansiGroups.bright.white}"
+
+" FZF
+let g:fzf_colors =
+\\ { "fg":      ["fg", "Normal"],
+  \\ "bg":      ["bg", "Normal"],
+  \\ "hl":      ["fg", "IncSearch"],
+  \\ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
+  \\ "bg+":     ["bg", "CursorLine", "CursorColumn"],
+  \\ "hl+":     ["fg", "IncSearch"],
+  \\ "info":    ["fg", "IncSearch"],
+  \\ "border":  ["fg", "Ignore"],
+  \\ "prompt":  ["fg", "Comment"],
+  \\ "pointer": ["fg", "IncSearch"],
+  \\ "marker":  ["fg", "IncSearch"],
+  \\ "spinner": ["fg", "IncSearch"],
+  \\ "header":  ["fg", "IncSearch"] }
 `
 
 process.stdout.write(sourceString)
