@@ -415,6 +415,26 @@ call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
 " VARIABLES
 " ==================================================================
 
+" VIM TERMINAL MODE
+let g:terminal_ansi_colors = [
+\\ "${ansiGroups.normal.black}",
+\\ "${ansiGroups.normal.red}",
+\\ "${ansiGroups.normal.green}",
+\\ "${ansiGroups.normal.yellow}",
+\\ "${ansiGroups.normal.blue}",
+\\ "${ansiGroups.normal.magenta}",
+\\ "${ansiGroups.normal.cyan}",
+\\ "${ansiGroups.normal.white}",
+\\ "${ansiGroups.bright.black}",
+\\ "${ansiGroups.bright.red}",
+\\ "${ansiGroups.bright.green}",
+\\ "${ansiGroups.bright.yellow}",
+\\ "${ansiGroups.bright.blue}",
+\\ "${ansiGroups.bright.magenta}",
+\\ "${ansiGroups.bright.cyan}",
+\\ "${ansiGroups.bright.white}"
+\\]
+
 " NEOVIM TERMINAL MODE
 let g:terminal_color_0 = "${ansiGroups.normal.black}"
 let g:terminal_color_1 = "${ansiGroups.normal.red}"
@@ -433,24 +453,25 @@ let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
 let g:terminal_color_14 = "${ansiGroups.bright.cyan}"
 let g:terminal_color_15 = "${ansiGroups.bright.white}"
 
+" FZF
+let g:fzf_colors = {
+\\ "fg":      ["fg", "Normal"],
+\\ "bg":      ["bg", "Normal"],
+\\ "hl":      ["fg", "IncSearch"],
+\\ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
+\\ "bg+":     ["bg", "CursorLine", "CursorColumn"],
+\\ "hl+":     ["fg", "IncSearch"],
+\\ "info":    ["fg", "IncSearch"],
+\\ "border":  ["fg", "Ignore"],
+\\ "prompt":  ["fg", "Comment"],
+\\ "pointer": ["fg", "IncSearch"],
+\\ "marker":  ["fg", "IncSearch"],
+\\ "spinner": ["fg", "IncSearch"],
+\\ "header":  ["fg", "IncSearch"] 
+\\}
+
 " VIM-POLYGLOT
 let g:javascript_plugin_flow = 1
-
-" FZF
-let g:fzf_colors =
-\\ { "fg":      ["fg", "Normal"],
-  \\ "bg":      ["bg", "Normal"],
-  \\ "hl":      ["fg", "IncSearch"],
-  \\ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
-  \\ "bg+":     ["bg", "CursorLine", "CursorColumn"],
-  \\ "hl+":     ["fg", "IncSearch"],
-  \\ "info":    ["fg", "IncSearch"],
-  \\ "border":  ["fg", "Ignore"],
-  \\ "prompt":  ["fg", "Comment"],
-  \\ "pointer": ["fg", "IncSearch"],
-  \\ "marker":  ["fg", "IncSearch"],
-  \\ "spinner": ["fg", "IncSearch"],
-  \\ "header":  ["fg", "IncSearch"] }
 `
 
 process.stdout.write(sourceString)

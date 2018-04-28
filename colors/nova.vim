@@ -325,6 +325,26 @@ call s:highlight_helper("EasyMotionShade", "#899BA6", "")
 " VARIABLES
 " ==================================================================
 
+" VIM TERMINAL MODE
+let g:terminal_ansi_colors = [
+\ "#3C4C55",
+\ "#DF8C8C",
+\ "#A8CE93",
+\ "#DADA93",
+\ "#83AFE5",
+\ "#9A93E1",
+\ "#7FC1CA",
+\ "#C5D4DD",
+\ "#899BA6",
+\ "#F2C38F",
+\ "#A8CE93",
+\ "#DADA93",
+\ "#83AFE5",
+\ "#D18EC2",
+\ "#7FC1CA",
+\ "#E6EEF3"
+\]
+
 " NEOVIM TERMINAL MODE
 let g:terminal_color_0 = "#3C4C55"
 let g:terminal_color_1 = "#DF8C8C"
@@ -343,21 +363,22 @@ let g:terminal_color_13 = "#D18EC2"
 let g:terminal_color_14 = "#7FC1CA"
 let g:terminal_color_15 = "#E6EEF3"
 
+" FZF
+let g:fzf_colors = {
+\ "fg":      ["fg", "Normal"],
+\ "bg":      ["bg", "Normal"],
+\ "hl":      ["fg", "IncSearch"],
+\ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
+\ "bg+":     ["bg", "CursorLine", "CursorColumn"],
+\ "hl+":     ["fg", "IncSearch"],
+\ "info":    ["fg", "IncSearch"],
+\ "border":  ["fg", "Ignore"],
+\ "prompt":  ["fg", "Comment"],
+\ "pointer": ["fg", "IncSearch"],
+\ "marker":  ["fg", "IncSearch"],
+\ "spinner": ["fg", "IncSearch"],
+\ "header":  ["fg", "IncSearch"] 
+\}
+
 " VIM-POLYGLOT
 let g:javascript_plugin_flow = 1
-
-" FZF
-let g:fzf_colors =
-\ { "fg":      ["fg", "Normal"],
-  \ "bg":      ["bg", "Normal"],
-  \ "hl":      ["fg", "IncSearch"],
-  \ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
-  \ "bg+":     ["bg", "CursorLine", "CursorColumn"],
-  \ "hl+":     ["fg", "IncSearch"],
-  \ "info":    ["fg", "IncSearch"],
-  \ "border":  ["fg", "Ignore"],
-  \ "prompt":  ["fg", "Comment"],
-  \ "pointer": ["fg", "IncSearch"],
-  \ "marker":  ["fg", "IncSearch"],
-  \ "spinner": ["fg", "IncSearch"],
-  \ "header":  ["fg", "IncSearch"] }
