@@ -29,7 +29,6 @@ syntax on
 syntax reset
 let g:colors_name = "nova"
 call s:highlight_helper("Normal", "${uiGroups.foreground}", "")
-let g:javascript_plugin_flow = 1
 
 
 " ==================================================================
@@ -433,6 +432,9 @@ let g:terminal_color_12 = "${ansiGroups.bright.blue}"
 let g:terminal_color_13 = "${ansiGroups.bright.magenta}"
 let g:terminal_color_14 = "${ansiGroups.bright.cyan}"
 let g:terminal_color_15 = "${ansiGroups.bright.white}"
+
+" VIM-POLYGLOT
+let g:javascript_plugin_flow = 1
 
 " FZF
 let g:fzf_colors =

@@ -25,7 +25,6 @@ syntax on
 syntax reset
 let g:colors_name = "nova"
 call s:highlight_helper("Normal", "#C5D4DD", "")
-let g:javascript_plugin_flow = 1
 
 
 " ==================================================================
@@ -343,6 +342,9 @@ let g:terminal_color_12 = "#83AFE5"
 let g:terminal_color_13 = "#D18EC2"
 let g:terminal_color_14 = "#7FC1CA"
 let g:terminal_color_15 = "#E6EEF3"
+
+" VIM-POLYGLOT
+let g:javascript_plugin_flow = 1
 
 " FZF
 let g:fzf_colors =
