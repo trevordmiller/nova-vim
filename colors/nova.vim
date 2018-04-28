@@ -25,6 +25,7 @@ syntax on
 syntax reset
 let g:colors_name = "nova"
 call s:highlight_helper("Normal", "#C5D4DD", "")
+let g:javascript_plugin_flow = 1
 
 
 " ==================================================================

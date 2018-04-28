@@ -29,6 +29,7 @@ syntax on
 syntax reset
 let g:colors_name = "nova"
 call s:highlight_helper("Normal", "${uiGroups.foreground}", "")
+let g:javascript_plugin_flow = 1
 
 
 " ==================================================================
