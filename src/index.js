@@ -43,6 +43,9 @@ call s:highlight_helper("WarningMsg", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellBad", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
+call s:highlight_helper("typescriptParenError", "${
+  uiGroups.userActionNeeded
+}", "")
 call s:highlight_helper("NeomakeErrorSign", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("NeomakeWarningSign", "${
   uiGroups.userActionNeeded
@@ -89,6 +92,8 @@ call s:highlight_helper("PmenuSel", "${uiGroups.gray2}", "${
 call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${
   uiGroups.userCurrentState
 }")
+call s:highlight_helper("netrwTime", "${uiGroups.userCurrentState}", "")
+call s:highlight_helper("netrwSizeDate", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${
   uiGroups.userCurrentState
 }")
@@ -199,6 +204,8 @@ call s:highlight_helper("xmlString", "${syntaxGroups.constant}", "")
 call s:highlight_helper("netrwPlain", "${syntaxGroups.constant}", "")
 call s:highlight_helper("netrwDir", "${syntaxGroups.constant}", "")
 call s:highlight_helper("shDerefSimple", "${syntaxGroups.constant}", "")
+call s:highlight_helper("typescriptBracket", "${syntaxGroups.constant}", "")
+call s:highlight_helper("typescriptBlock", "${syntaxGroups.constant}", "")
 
 " IDENTIFIER
 call s:highlight_helper("Identifier", "${syntaxGroups.identifier}", "")
@@ -257,6 +264,9 @@ call s:highlight_helper("typescriptVariableDeclaration", "${
   syntaxGroups.identifier
 }", "")
 call s:highlight_helper("typescriptCall", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("typescriptRef", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("typescriptVars", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("typescriptFunction", "${syntaxGroups.identifier}", "")
 
 " STATEMENT
 call s:highlight_helper("Statement", "${syntaxGroups.statement}", "")
@@ -279,6 +289,12 @@ call s:highlight_helper("shCmdSubRegion", "${syntaxGroups.statement}", "")
 call s:highlight_helper("typescriptOperator", "${syntaxGroups.statement}", "")
 call s:highlight_helper("typescriptOpSymbols", "${syntaxGroups.statement}", "")
 call s:highlight_helper("typescriptProp", "${syntaxGroups.statement}", "")
+call s:highlight_helper("typescriptInterpolation", "${
+  syntaxGroups.statement
+}", "")
+call s:highlight_helper("typescriptEventListenerMethods", "${
+  syntaxGroups.statement
+}", "")
 
 " TYPE
 call s:highlight_helper("Type", "${syntaxGroups.type}", "")
@@ -301,6 +317,7 @@ call s:highlight_helper("typescriptEnumKeyword", "${syntaxGroups.type}", "")
 call s:highlight_helper("typescriptVariable", "${syntaxGroups.type}", "")
 call s:highlight_helper("typescriptFuncKeyword", "${syntaxGroups.type}", "")
 call s:highlight_helper("typescriptDefault", "${syntaxGroups.type}", "")
+call s:highlight_helper("typescriptReserved", "${syntaxGroups.type}", "")
 
 " GLOBAL
 call s:highlight_helper("PreProc", "${syntaxGroups.global}", "")
@@ -355,9 +372,14 @@ call s:highlight_helper("markdownLinkText", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownCodeDelimiter", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwClassify", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwVersion", "${syntaxGroups.special}", "")
+call s:highlight_helper("netrwSpecial", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptParens", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptBraces", "${syntaxGroups.special}", "")
 call s:highlight_helper("typescriptArrowFunc", "${syntaxGroups.special}", "")
+call s:highlight_helper("typescriptPropietaryMethods", "${
+  syntaxGroups.special
+}", "")
+call s:highlight_helper("typescriptParen", "${syntaxGroups.special}", "")
 call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
 
 " TRIVIAL
@@ -372,6 +394,15 @@ call s:highlight_helper("jsonQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("shQuote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("typescriptEndColons", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("typescriptTemplateSB", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("typescriptCommentSkip", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("typescriptDotNotation", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwSortBy", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwSortSeq", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwQuickHelp", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwCopyTgt", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwTreeBarSpace", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwSlash", "${syntaxGroups.trivial}", "")
+call s:highlight_helper("netrwCmdNote", "${syntaxGroups.trivial}", "")
 call s:highlight_helper("EasyMotionShade", "${syntaxGroups.trivial}", "")
 
 
