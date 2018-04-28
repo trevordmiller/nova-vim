@@ -44,38 +44,76 @@ call s:highlight_helper("SpellBad", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("NeomakeErrorSign", "${uiGroups.userActionNeeded}", "")
-call s:highlight_helper("NeomakeWarningSign", "${uiGroups.userActionNeeded}", "")
+call s:highlight_helper("NeomakeWarningSign", "${
+  uiGroups.userActionNeeded
+}", "")
 
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "${uiGroups.userCurrentState}", "NONE")
 call s:highlight_helper("CursorLineNr", "${uiGroups.userCurrentState}", "")
-call s:highlight_helper("Visual", "${uiGroups.background}", "${uiGroups.userCurrentState}")
-call s:highlight_helper("VisualNOS", "${uiGroups.background}", "${uiGroups.userCurrentState}")
+call s:highlight_helper("Visual", "${uiGroups.background}", "${
+  uiGroups.userCurrentState
+}")
+call s:highlight_helper("VisualNOS", "${uiGroups.background}", "${
+  uiGroups.userCurrentState
+}")
 call s:highlight_helper("Folded", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("FoldColumn", "${uiGroups.userCurrentState}", "")
-call s:highlight_helper("IncSearch", "${uiGroups.userCurrentState}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("Search", "${uiGroups.userCurrentState}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("WildMenu", "${uiGroups.backgroundShade}", "${uiGroups.userCurrentState}")
-call s:highlight_helper("ToolbarButton", "${uiGroups.backgroundShade}", "${uiGroups.userCurrentState}")
+call s:highlight_helper("IncSearch", "${uiGroups.userCurrentState}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("Search", "${uiGroups.userCurrentState}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("WildMenu", "${uiGroups.backgroundShade}", "${
+  uiGroups.userCurrentState
+}")
+call s:highlight_helper("ToolbarButton", "${uiGroups.backgroundShade}", "${
+  uiGroups.userCurrentState
+}")
 call s:highlight_helper("Question", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("MoreMsg", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("ModeMsg", "${uiGroups.userCurrentState}", "")
-call s:highlight_helper("StatusLine", "${uiGroups.userCurrentState}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("StatusLineTerm", "${uiGroups.userCurrentState}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("TabLineSel", "${uiGroups.userCurrentState}", "${uiGroups.background}")
-call s:highlight_helper("PmenuSel", "${uiGroups.gray2}", "${uiGroups.userCurrentState}")
-call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${uiGroups.userCurrentState}")
-call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${uiGroups.userCurrentState}")
+call s:highlight_helper("StatusLine", "${uiGroups.userCurrentState}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("StatusLineTerm", "${uiGroups.userCurrentState}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("TabLineSel", "${uiGroups.userCurrentState}", "${
+  uiGroups.background
+}")
+call s:highlight_helper("PmenuSel", "${uiGroups.gray2}", "${
+  uiGroups.userCurrentState
+}")
+call s:highlight_helper("PmenuThumb", "${uiGroups.userCurrentState}", "${
+  uiGroups.userCurrentState
+}")
+call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${
+  uiGroups.userCurrentState
+}")
 
 " VERSION CONTROL
-call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${versionControlGroups.added}")
-call s:highlight_helper("DiffChange", "${uiGroups.background}", "${versionControlGroups.modified}")
+call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${
+  versionControlGroups.added
+}")
+call s:highlight_helper("DiffChange", "${uiGroups.background}", "${
+  versionControlGroups.modified
+}")
 call s:highlight_helper("DiffDelete", "${versionControlGroups.removed}", "")
-call s:highlight_helper("DiffText", "${uiGroups.background}", "${versionControlGroups.modified}", "BOLD")
+call s:highlight_helper("DiffText", "${uiGroups.background}", "${
+  versionControlGroups.modified
+}", "BOLD")
 call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
-call s:highlight_helper("GitGutterChange", "${versionControlGroups.modified}", "")
-call s:highlight_helper("GitGutterChangeDelete", "${versionControlGroups.modified}", "")
-call s:highlight_helper("GitGutterDelete", "${versionControlGroups.removed}", "")
+call s:highlight_helper("GitGutterChange", "${
+  versionControlGroups.modified
+}", "")
+call s:highlight_helper("GitGutterChangeDelete", "${
+  versionControlGroups.modified
+}", "")
+call s:highlight_helper("GitGutterDelete", "${
+  versionControlGroups.removed
+}", "")
 
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
@@ -85,19 +123,35 @@ call s:highlight_helper("CursorColumn", "NONE", "${uiGroups.gray2}")
 call s:highlight_helper("ColorColumn", "NONE", "${uiGroups.gray2}")
 call s:highlight_helper("EndOfBuffer", "${uiGroups.gray2}", "")
 call s:highlight_helper("VertSplit", "${uiGroups.backgroundShade}", "")
-call s:highlight_helper("StatusLineNC", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("StatusLineTermNC", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("TabLine", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("TabLineFill", "${uiGroups.backgroundShade}", "${uiGroups.backgroundShade}")
-call s:highlight_helper("ToolbarLine", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
+call s:highlight_helper("StatusLineNC", "${uiGroups.gray3}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("StatusLineTermNC", "${uiGroups.gray3}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("TabLine", "${uiGroups.gray3}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("TabLineFill", "${uiGroups.backgroundShade}", "${
+  uiGroups.backgroundShade
+}")
+call s:highlight_helper("ToolbarLine", "${uiGroups.gray3}", "${
+  uiGroups.backgroundShade
+}")
 call s:highlight_helper("Pmenu", "${uiGroups.foreground}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSbar", "${uiGroups.gray4}", "${uiGroups.gray4}")
 call s:highlight_helper("fzf1", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("fzf2", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("fzf3", "${uiGroups.background}", "${uiGroups.gray2}")
-call s:highlight_helper("EasyMotionTarget", "${ansiGroups.normal.red}", "", "BOLD")
-call s:highlight_helper("EasyMotionTarget2First", "${ansiGroups.bright.red}", "")
-call s:highlight_helper("EasyMotionTarget2Second", "${ansiGroups.normal.yellow}", "")
+call s:highlight_helper("EasyMotionTarget", "${
+  ansiGroups.normal.red
+}", "", "BOLD")
+call s:highlight_helper("EasyMotionTarget2First", "${
+  ansiGroups.bright.red
+}", "")
+call s:highlight_helper("EasyMotionTarget2Second", "${
+  ansiGroups.normal.yellow
+}", "")
 
 
 " ==================================================================
@@ -152,25 +206,43 @@ call s:highlight_helper("jsVariableDef", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsObject", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsObjectKey", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsObjectKeyComputed", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("jsClassPropertyComputed", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("jsDestructuringPropertyComputed", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("jsDestructuringValue", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("jsClassPropertyComputed", "${
+  syntaxGroups.identifier
+}", "")
+call s:highlight_helper("jsDestructuringPropertyComputed", "${
+  syntaxGroups.identifier
+}", "")
+call s:highlight_helper("jsDestructuringValue", "${
+  syntaxGroups.identifier
+}", "")
 call s:highlight_helper("jsFutureKeys", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsObjectProp", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsPrototype", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsObjectStringKey", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsFuncArgs", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsTaggedTemplate", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("jsDestructuringBlock", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("jsDestructuringArray", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("jsDestructuringPropertyValue", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("jsDestructuringBlock", "${
+  syntaxGroups.identifier
+}", "")
+call s:highlight_helper("jsDestructuringArray", "${
+  syntaxGroups.identifier
+}", "")
+call s:highlight_helper("jsDestructuringPropertyValue", "${
+  syntaxGroups.identifier
+}", "")
 call s:highlight_helper("jsImportContainer", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsExportContainer", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsModuleGroup", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("jsModuleKeyword", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("javascriptHtmlEvents", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("javascriptDomElemAttrs", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("javascriptDomElemFuncs", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("javascriptHtmlEvents", "${
+  syntaxGroups.identifier
+}", "")
+call s:highlight_helper("javascriptDomElemAttrs", "${
+  syntaxGroups.identifier
+}", "")
+call s:highlight_helper("javascriptDomElemFuncs", "${
+  syntaxGroups.identifier
+}", "")
 call s:highlight_helper("cssClassName", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("cssIdentifier", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("htmlTagName", "${syntaxGroups.identifier}", "")
@@ -181,7 +253,9 @@ call s:highlight_helper("jsonKeyword", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("xmlAttrib", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("netrwExe", "${syntaxGroups.identifier}", "")
 call s:highlight_helper("shFunction", "${syntaxGroups.identifier}", "")
-call s:highlight_helper("typescriptVariableDeclaration", "${syntaxGroups.identifier}", "")
+call s:highlight_helper("typescriptVariableDeclaration", "${
+  syntaxGroups.identifier
+}", "")
 call s:highlight_helper("typescriptCall", "${syntaxGroups.identifier}", "")
 
 " STATEMENT
@@ -263,7 +337,9 @@ call s:highlight_helper("jsArrowFunction", "${syntaxGroups.special}", "")
 call s:highlight_helper("jsModuleAsterisk", "${syntaxGroups.special}", "")
 call s:highlight_helper("cssBraces", "${syntaxGroups.special}", "")
 call s:highlight_helper("cssBraces", "${syntaxGroups.special}", "")
-call s:highlight_helper("markdownHeadingDelimiter", "${syntaxGroups.special}", "")
+call s:highlight_helper("markdownHeadingDelimiter", "${
+  syntaxGroups.special
+}", "")
 call s:highlight_helper("markdownH1", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownH2", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownH3", "${syntaxGroups.special}", "")
@@ -272,7 +348,9 @@ call s:highlight_helper("markdownH5", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownH6", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownRule", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownListMarker", "${syntaxGroups.special}", "")
-call s:highlight_helper("markdownOrderedListMarker", "${syntaxGroups.special}", "")
+call s:highlight_helper("markdownOrderedListMarker", "${
+  syntaxGroups.special
+}", "")
 call s:highlight_helper("markdownLinkText", "${syntaxGroups.special}", "")
 call s:highlight_helper("markdownCodeDelimiter", "${syntaxGroups.special}", "")
 call s:highlight_helper("netrwClassify", "${syntaxGroups.special}", "")
