@@ -97,6 +97,7 @@ call s:highlight_helper("netrwSizeDate", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("CtrlPMatch", "${uiGroups.background}", "${
   uiGroups.userCurrentState
 }")
+call s:highlight_helper("gitcommitSummary", "${uiGroups.userCurrentState}", "")
 
 " VERSION CONTROL
 call s:highlight_helper("DiffAdd", "${uiGroups.background}", "${
@@ -206,6 +207,7 @@ call s:highlight_helper("netrwDir", "${syntaxGroups.constant}", "")
 call s:highlight_helper("shDerefSimple", "${syntaxGroups.constant}", "")
 call s:highlight_helper("typescriptBracket", "${syntaxGroups.constant}", "")
 call s:highlight_helper("typescriptBlock", "${syntaxGroups.constant}", "")
+call s:highlight_helper("goConst", "${syntaxGroups.constant}", "")
 
 " IDENTIFIER
 call s:highlight_helper("Identifier", "${syntaxGroups.identifier}", "")
@@ -295,6 +297,7 @@ call s:highlight_helper("typescriptInterpolation", "${
 call s:highlight_helper("typescriptEventListenerMethods", "${
   syntaxGroups.statement
 }", "")
+call s:highlight_helper("dockerfileKeyword", "${syntaxGroups.statement}", "")
 
 " TYPE
 call s:highlight_helper("Type", "${syntaxGroups.type}", "")
@@ -318,6 +321,7 @@ call s:highlight_helper("typescriptVariable", "${syntaxGroups.type}", "")
 call s:highlight_helper("typescriptFuncKeyword", "${syntaxGroups.type}", "")
 call s:highlight_helper("typescriptDefault", "${syntaxGroups.type}", "")
 call s:highlight_helper("typescriptReserved", "${syntaxGroups.type}", "")
+call s:highlight_helper("goDeclaration", "${syntaxGroups.type}", "")
 
 " GLOBAL
 call s:highlight_helper("PreProc", "${syntaxGroups.global}", "")
@@ -332,6 +336,8 @@ call s:highlight_helper("cssFontDescriptor", "${syntaxGroups.global}", "")
 call s:highlight_helper("typescriptGlobal", "${syntaxGroups.global}", "")
 call s:highlight_helper("typescriptExport", "${syntaxGroups.global}", "")
 call s:highlight_helper("typescriptImport", "${syntaxGroups.global}", "")
+call s:highlight_helper("goPackage", "${syntaxGroups.global}", "")
+call s:highlight_helper("goImport", "${syntaxGroups.global}", "")
 
 " EMPHASIS
 call s:highlight_helper("Underlined", "${syntaxGroups.emphasis}", "")

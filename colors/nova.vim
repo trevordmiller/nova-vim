@@ -65,6 +65,7 @@ call s:highlight_helper("PmenuThumb", "#7FC1CA", "#7FC1CA")
 call s:highlight_helper("netrwTime", "#7FC1CA", "")
 call s:highlight_helper("netrwSizeDate", "#7FC1CA", "")
 call s:highlight_helper("CtrlPMatch", "#3C4C55", "#7FC1CA")
+call s:highlight_helper("gitcommitSummary", "#7FC1CA", "")
 
 " VERSION CONTROL
 call s:highlight_helper("DiffAdd", "#3C4C55", "#A8CE93")
@@ -146,6 +147,7 @@ call s:highlight_helper("netrwDir", "#7FC1CA", "")
 call s:highlight_helper("shDerefSimple", "#7FC1CA", "")
 call s:highlight_helper("typescriptBracket", "#7FC1CA", "")
 call s:highlight_helper("typescriptBlock", "#7FC1CA", "")
+call s:highlight_helper("goConst", "#7FC1CA", "")
 
 " IDENTIFIER
 call s:highlight_helper("Identifier", "#83AFE5", "")
@@ -211,6 +213,7 @@ call s:highlight_helper("typescriptOpSymbols", "#DADA93", "")
 call s:highlight_helper("typescriptProp", "#DADA93", "")
 call s:highlight_helper("typescriptInterpolation", "#DADA93", "")
 call s:highlight_helper("typescriptEventListenerMethods", "#DADA93", "")
+call s:highlight_helper("dockerfileKeyword", "#DADA93", "")
 
 " TYPE
 call s:highlight_helper("Type", "#A8CE93", "")
@@ -234,6 +237,7 @@ call s:highlight_helper("typescriptVariable", "#A8CE93", "")
 call s:highlight_helper("typescriptFuncKeyword", "#A8CE93", "")
 call s:highlight_helper("typescriptDefault", "#A8CE93", "")
 call s:highlight_helper("typescriptReserved", "#A8CE93", "")
+call s:highlight_helper("goDeclaration", "#A8CE93", "")
 
 " GLOBAL
 call s:highlight_helper("PreProc", "#9A93E1", "")
@@ -248,6 +252,8 @@ call s:highlight_helper("cssFontDescriptor", "#9A93E1", "")
 call s:highlight_helper("typescriptGlobal", "#9A93E1", "")
 call s:highlight_helper("typescriptExport", "#9A93E1", "")
 call s:highlight_helper("typescriptImport", "#9A93E1", "")
+call s:highlight_helper("goPackage", "#9A93E1", "")
+call s:highlight_helper("goImport", "#9A93E1", "")
 
 " EMPHASIS
 call s:highlight_helper("Underlined", "#D18EC2", "")
