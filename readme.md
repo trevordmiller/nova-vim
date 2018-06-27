@@ -6,7 +6,7 @@ Nova color scheme plugin for Vim
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [contributing.md](contributing.md)
 
 ## More info
 
