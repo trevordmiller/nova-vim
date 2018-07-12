@@ -5,6 +5,7 @@
   * In normal Vim, you can do this with a symbolic link to the `.vim/colors` directory like this: `ln -sf "$(pwd)"/colors/nova.vim ~/.vim/colors/nova.vim`
 * Run `npm install` to install libraries
 * Run `npm run dev` to develop
+  * Make changes to the `src/` directory, which gets built to the `colors/` directory
   * With each change, you will need to run `:source $MYVIMRC` to see the change, since Vim doesn't reload your `.vimrc` automatically
   * Run `:hi` to view all applied highlight groups
 * Submit a pull request to `master`
