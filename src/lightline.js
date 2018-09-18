@@ -18,13 +18,13 @@ const sourceString = `
 
   let s:black         = [ '${uiGroups.background}', 'NONE' ]
   let s:white         = [ '${uiGroups.foreground}', 'NONE' ]
-  let s:comment_grey  = [ '${colorValues.grays.gray3}', 59 ]
-  let s:gutter_grey   = [ '${colorValues.grays.gray4}', 238 ]
+  let s:comment_grey  = [ '${colorValues.grays.gray3}', 'NONE' ]
+  let s:gutter_grey   = [ '${colorValues.grays.gray4}', 'NONE' ]
   let s:cursor_grey   = [ '${colorValues.grays.gray0}', 'NONE' ]
-  let s:visual_grey   = [ '${colorValues.grays.gray1}', 237 ]
+  let s:visual_grey   = [ '${colorValues.grays.gray1}', 'NONE' ]
   let s:menu_grey     = s:visual_grey
-  let s:special_grey  = [ '${colorValues.grays.gray2}', 238 ]
-  let s:vertsplit     = [ '#181a1f', 59 ]
+  let s:special_grey  = [ '${colorValues.grays.gray2}', 'NONE' ]
+  let s:vertsplit     = [ '#181a1f', 'NONE' ]
 
   let s:tab_color     = s:blue
   let s:normal_color  = s:blue
