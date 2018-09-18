@@ -82,8 +82,6 @@ export const ansiGroups = {
 const sourceString = `
   " Color palette
 
-  let s:bold = get(g:, 'lightline#nova#disable_bold_style', 0) ? '' : 'bold'
-
   " Colour codes that are used in the original nova.vim theme
   let s:light_red     = [ '${colorValues.colors.red}', 'NONE' ]
   let s:dark_red      = [ '${colorValues.colors.orange}', 'NONE' ]
@@ -116,19 +114,19 @@ const sourceString = `
 
   let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}, 'tabline': {}}
 
-  let s:p.normal.left     = [ [ s:black, s:normal_color, s:bold ], [ s:white, s:active_bg ] ]
+  let s:p.normal.left     = [ [ s:black, s:normal_color ], [ s:white, s:active_bg ] ]
   let s:p.normal.right    = [ [ s:black, s:normal_color ], [ s:white, s:active_bg ] ]
   let s:p.normal.middle   = [ [ s:normal_color, s:cursor_grey ] ]
 
-  let s:p.insert.left     = [ [ s:black, s:insert_color, s:bold ], [ s:white, s:active_bg ] ]
+  let s:p.insert.left     = [ [ s:black, s:insert_color ], [ s:white, s:active_bg ] ]
   let s:p.insert.right    = [ [ s:black, s:insert_color ], [ s:white, s:active_bg ] ]
   let s:p.insert.middle   = [ [ s:insert_color, s:cursor_grey ] ]
 
-  let s:p.replace.left    = [ [ s:black, s:replace_color, s:bold ], [ s:white, s:active_bg ] ]
+  let s:p.replace.left    = [ [ s:black, s:replace_color ], [ s:white, s:active_bg ] ]
   let s:p.replace.right   = [ [ s:black, s:replace_color ], [ s:white, s:active_bg ] ]
   let s:p.replace.middle  = [ [ s:replace_color, s:cursor_grey ] ]
 
-  let s:p.visual.left     = [ [ s:black, s:visual_color, s:bold ], [ s:white, s:active_bg ] ]
+  let s:p.visual.left     = [ [ s:black, s:visual_color ], [ s:white, s:active_bg ] ]
   let s:p.visual.right    = [ [ s:black, s:visual_color ], [ s:white, s:active_bg ] ]
   let s:p.visual.middle   = [ [ s:visual_color, s:cursor_grey ] ]
 
@@ -139,7 +137,7 @@ const sourceString = `
   let s:p.tabline.left    = [ [ s:gutter_grey, s:cursor_grey ] ]
   let s:p.tabline.right   = [ [ s:tab_color, s:cursor_grey ] ]
   let s:p.tabline.middle  = [ [ s:black, s:black ] ]
-  let s:p.tabline.tabsel  = [ [ s:black, s:blue, s:bold ] ]
+  let s:p.tabline.tabsel  = [ [ s:black, s:blue ] ]
   let s:p.tabline.bufsel  = [ [ s:tab_color, s:visual_grey ] ]
   let s:p.tabline.tabsep  = [ [ s:white, s:cursor_grey ] ]
 
