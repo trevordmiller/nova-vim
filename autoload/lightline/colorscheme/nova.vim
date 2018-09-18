@@ -16,13 +16,13 @@
 
   let s:black         = [ '#3C4C55', 'NONE' ]
   let s:white         = [ '#C5D4DD', 'NONE' ]
-  let s:comment_grey  = [ '#6A7D89', 59 ]
-  let s:gutter_grey   = [ '#899BA6', 238 ]
-  let s:cursor_grey   = [ '#1E272C', 'NONE' ]
-  let s:visual_grey   = [ '#3C4C55', 237 ]
+  let s:comment_grey  = [ '#6A7D89', 'NONE' ]
+  let s:gutter_grey   = [ '#899BA6', 'NONE' ]
+  let s:cursor_grey   = [ '#3C4C55', 'NONE' ]
+  let s:visual_grey   = [ '#1E272C', 'NONE' ]
   let s:menu_grey     = s:visual_grey
-  let s:special_grey  = [ '#556873', 238 ]
-  let s:vertsplit     = [ '#181a1f', 59 ]
+  let s:special_grey  = [ '#556873', 'NONE' ]
+  let s:vertsplit     = [ '#181a1f', 'NONE' ]
 
   let s:tab_color     = s:blue
   let s:normal_color  = s:blue
