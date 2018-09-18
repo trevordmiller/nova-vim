@@ -1,6 +1,84 @@
 const colorValues = require("nova-colors").default;
 const uiGroups = require("nova-colors").uiGroups;
 
+/* COLOR REFERENCES:
+
+const colorValues = {
+  colors: {
+    cyan: '#7FC1CA',
+    blue: '#83AFE5',
+    purple: '#9A93E1',
+    pink: '#D18EC2',
+    red: '#DF8C8C',
+    orange: '#F2C38F',
+    yellow: '#DADA93',
+    green: '#A8CE93',
+  },
+  grays: {
+    gray0: '#1E272C',
+    gray1: '#3C4C55',
+    gray2: '#556873',
+    gray3: '#6A7D89',
+    gray4: '#899BA6',
+    gray5: '#C5D4DD',
+    gray6: '#E6EEF3',
+  },
+}
+
+export default colorValues
+
+export const uiGroups = {
+  userActionNeeded: colorValues.colors.red,
+  userCurrentState: colorValues.colors.cyan,
+  backgroundShade: colorValues.grays.gray0,
+  background: colorValues.grays.gray1,
+  foreground: colorValues.grays.gray5,
+  ...colorValues.grays,
+}
+
+export const syntaxGroups = {
+  constant: colorValues.colors.cyan,
+  identifier: colorValues.colors.blue,
+  statement: colorValues.colors.yellow,
+  type: colorValues.colors.green,
+  global: colorValues.colors.purple,
+  emphasis: colorValues.colors.pink,
+  special: colorValues.colors.orange,
+  trivial: colorValues.grays.gray4,
+}
+
+export const versionControlGroups = {
+  added: colorValues.colors.green,
+  modified: colorValues.colors.orange,
+  removed: colorValues.colors.red,
+  renamed: colorValues.colors.blue,
+}
+
+export const ansiGroups = {
+  normal: {
+    black: uiGroups.background,
+    red: colorValues.colors.red,
+    green: colorValues.colors.green,
+    yellow: colorValues.colors.yellow,
+    blue: colorValues.colors.blue,
+    magenta: colorValues.colors.purple,
+    cyan: colorValues.colors.cyan,
+    white: uiGroups.foreground,
+  },
+  bright: {
+    black: colorValues.grays.gray4,
+    red: colorValues.colors.orange,
+    green: colorValues.colors.green,
+    yellow: colorValues.colors.yellow,
+    blue: colorValues.colors.blue,
+    magenta: colorValues.colors.pink,
+    cyan: colorValues.colors.cyan,
+    white: colorValues.grays.gray6,
+  },
+}
+
+*/
+
 const sourceString = `
   " Color palette
 
@@ -20,8 +98,8 @@ const sourceString = `
   let s:white         = [ '${uiGroups.foreground}', 'NONE' ]
   let s:comment_grey  = [ '${colorValues.grays.gray3}', 'NONE' ]
   let s:gutter_grey   = [ '${colorValues.grays.gray4}', 'NONE' ]
-  let s:cursor_grey   = [ '${colorValues.grays.gray0}', 'NONE' ]
-  let s:visual_grey   = [ '${colorValues.grays.gray1}', 'NONE' ]
+  let s:cursor_grey   = [ '${colorValues.grays.gray1}', 'NONE' ]
+  let s:visual_grey   = [ '${colorValues.grays.gray0}', 'NONE' ]
   let s:menu_grey     = s:visual_grey
   let s:special_grey  = [ '${colorValues.grays.gray2}', 'NONE' ]
   let s:vertsplit     = [ '#181a1f', 'NONE' ]
