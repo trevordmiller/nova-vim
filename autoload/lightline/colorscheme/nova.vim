@@ -35,24 +35,24 @@
   let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}, 'tabline': {}}
 
   let s:p.normal.left     = [ [ s:black, s:normal_color, 'bold' ], [ s:white, s:active_bg ] ]
-  let s:p.normal.right    = [ [ s:black, s:normal_color ], [ s:white, s:active_bg ] ]
-  let s:p.normal.middle   = [ [ s:normal_color, s:cursor_grey ] ]
+  let s:p.normal.right    = [ [ s:white, s:active_bg ], [ s:white, s:active_bg ] ]
+  let s:p.normal.middle   = [ [ s:white, s:active_bg ] ]
 
   let s:p.insert.left     = [ [ s:black, s:insert_color, 'bold' ], [ s:white, s:active_bg ] ]
-  let s:p.insert.right    = [ [ s:black, s:insert_color ], [ s:white, s:active_bg ] ]
-  let s:p.insert.middle   = [ [ s:insert_color, s:cursor_grey ] ]
+  let s:p.insert.right    = [ [ s:white, s:active_bg ], [ s:white, s:active_bg ] ]
+  let s:p.insert.middle   = [ [ s:white, s:active_bg ] ]
 
   let s:p.replace.left    = [ [ s:black, s:replace_color, 'bold' ], [ s:white, s:active_bg ] ]
-  let s:p.replace.right   = [ [ s:black, s:replace_color ], [ s:white, s:active_bg ] ]
-  let s:p.replace.middle  = [ [ s:replace_color, s:cursor_grey ] ]
+  let s:p.replace.right   = [ [ s:white, s:active_bg ], [ s:white, s:active_bg ] ]
+  let s:p.replace.middle  = [ [ s:white, s:active_bg ] ]
 
   let s:p.visual.left     = [ [ s:black, s:visual_color, 'bold' ], [ s:white, s:active_bg ] ]
-  let s:p.visual.right    = [ [ s:black, s:visual_color ], [ s:white, s:active_bg ] ]
-  let s:p.visual.middle   = [ [ s:visual_color, s:cursor_grey ] ]
+  let s:p.visual.right    = [ [ s:white, s:active_bg ], [ s:white, s:active_bg ] ]
+  let s:p.visual.middle   = [ [ s:white, s:active_bg ] ]
 
-  let s:p.inactive.left   = [ [ s:white, s:inactive_bg, 'bold' ], [ s:white, s:inactive_bg ] ]
-  let s:p.inactive.right  = [ [ s:white, s:inactive_bg ], [ s:white, s:inactive_bg ] ]
-  let s:p.inactive.middle = [ [ s:white, s:inactive_bg ] ]
+  let s:p.inactive.left   = [ [ s:white, s:active_bg, 'bold' ], [ s:white, s:active_bg ] ]
+  let s:p.inactive.right  = [ [ s:white, s:active_bg ], [ s:white, s:active_bg ] ]
+  let s:p.inactive.middle = [ [ s:white, s:active_bg ] ]
 
   let s:p.tabline.left    = [ [ s:gutter_grey, s:cursor_grey ] ]
   let s:p.tabline.right   = [ [ s:tab_color, s:cursor_grey ] ]
