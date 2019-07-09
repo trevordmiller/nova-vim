@@ -11,7 +11,7 @@ const sourceString = `
 function! s:highlight_helper(...)
   let l:syntax_group = a:1
   let l:foreground_color = a:2
-  let l:background_color = empty(a:3) ? "${uiGroups.background}" : a:3
+  let l:background_color = empty(a:3) ? "NONE" : a:3
   let l:gui = a:0 == 3 ? "None" : a:4
 
   exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
@@ -28,7 +28,7 @@ set termguicolors
 syntax on
 syntax reset
 let g:colors_name = "nova"
-call s:highlight_helper("Normal", "${uiGroups.foreground}", "")
+call s:highlight_helper("Normal", "${uiGroups.foreground}", "${uiGroups.background}")
 
 
 " ==================================================================
@@ -51,7 +51,7 @@ call s:highlight_helper("NeomakeWarningSign", "${
 }", "")
 
 " USER CURRENT STATE
-call s:highlight_helper("MatchParen", "${uiGroups.userCurrentState}", "NONE")
+call s:highlight_helper("MatchParen", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("CursorLineNr", "${uiGroups.userCurrentState}", "")
 call s:highlight_helper("Visual", "${uiGroups.background}", "${
   uiGroups.userCurrentState
