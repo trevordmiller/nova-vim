@@ -7,7 +7,7 @@
 function! s:highlight_helper(...)
   let l:syntax_group = a:1
   let l:foreground_color = a:2
-  let l:background_color = empty(a:3) ? (exists('g:nova_transparent') ? "NONE" : "#3C4C55") : a:3
+  let l:background_color = empty(a:3) ? "NONE" : a:3
   let l:gui = a:0 == 3 ? "None" : a:4
 
   exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
@@ -24,7 +24,7 @@ set termguicolors
 syntax on
 syntax reset
 let g:colors_name = "nova"
-call s:highlight_helper("Normal", "#C5D4DD", "")
+call s:highlight_helper("Normal", "#C5D4DD", "#3C4C55")
 
 
 " ==================================================================
@@ -43,7 +43,7 @@ call s:highlight_helper("NeomakeErrorSign", "#DF8C8C", "")
 call s:highlight_helper("NeomakeWarningSign", "#DF8C8C", "")
 
 " USER CURRENT STATE
-call s:highlight_helper("MatchParen", "#7FC1CA", "NONE")
+call s:highlight_helper("MatchParen", "#7FC1CA", "")
 call s:highlight_helper("CursorLineNr", "#7FC1CA", "")
 call s:highlight_helper("Visual", "#3C4C55", "#7FC1CA")
 call s:highlight_helper("VisualNOS", "#3C4C55", "#7FC1CA")
@@ -377,7 +377,7 @@ let g:fzf_colors = {
 \ "pointer": ["fg", "IncSearch"],
 \ "marker":  ["fg", "IncSearch"],
 \ "spinner": ["fg", "IncSearch"],
-\ "header":  ["fg", "IncSearch"]
+\ "header":  ["fg", "IncSearch"] 
 \}
 
 " VIM-POLYGLOT
