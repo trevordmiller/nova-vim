@@ -23,7 +23,7 @@
     }
   },
   "devDependencies": {
-    "eslint": "^5.8.0",
+    "eslint": "^6.0.1",
     "watch": "0.19.2"
   },
   "dependencies": {
