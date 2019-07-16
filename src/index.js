@@ -42,6 +42,7 @@ call s:highlight_helper("WarningMsg", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellBad", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
+call s:highlight_helper("SignColumn", "NONE", "${uiGroups.userActionNeeded}")
 call s:highlight_helper("typescriptParenError", "${
   uiGroups.userActionNeeded
 }", "")
@@ -121,7 +122,6 @@ call s:highlight_helper("GitGutterDelete", "${
 }", "")
 
 " OTHER
-call s:highlight_helper("SignColumn", "NONE", "")
 call s:highlight_helper("LineNr", "${uiGroups.gray3}", "")
 call s:highlight_helper("CursorLine", "NONE", "${uiGroups.gray2}")
 call s:highlight_helper("CursorColumn", "NONE", "${uiGroups.gray2}")
